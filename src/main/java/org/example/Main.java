@@ -46,7 +46,7 @@ public class Main {
         System.out.print("Enter Your Password: ");
         String password = scanner.nextLine();
 
-        if (adminCredentials.containsKey(username) && adminCredentials.get(username).equals(password)) {
+        if (adminCredentials.containsKey(username) || adminCredentials.get(username).equals(password)) {
             System.out.println("Successful Login an Admin!! (^_^)");
         } else {
             System.out.println("Admin login failed!! (-_-)");
